@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import Login from "./login.jsx"
 
 
 function Attendence() {
@@ -12,19 +12,7 @@ function Attendence() {
                 (isLogin) ?
                     <div></div>
                     :
-                    <div className="signin">
-                        <h1>Sign In</h1>
-                        <form>
-                            <label htmlFor="">Username</label>
-                            <br />
-                            <input type="text" placeholder="Enter your user name" />
-                            <br />
-
-                            <label htmlFor="">Password</label>
-                            <br />
-                            <input type="text" placeholder="Enter your password" />
-                        </form>
-                    </div>
+                    <Login/>
             }
 
         </div>
